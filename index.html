@@ -7,7 +7,13 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-</head>
+<style>
+.image{
+    width: 450px;
+    height: 200px;
+}
+</style>
+    </head>
 
 <body style="text-align: center;">
 
@@ -64,50 +70,52 @@
             </h4>
 
         </div>
+ 
 
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-</p>
-<div class="row">
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample1">
-      <div class="card card-body">
-        Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Toggle Joker
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="image" src="https://source.unsplash.com/1600x400/?joker">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col">
-    <div class="collapse multi-collapse" id="multiCollapseExample2">
-      <div class="card card-body">
-        Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-      </div>
-    </div>
-  </div>
-</div>
-        <div class="card-group my-4 ">
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49uiio3PlQx0FalidjK6bM0OYUolMOpa-YQ&usqp=CAU"
-                    alt="Card image cap" width="150" height="400">
 
+        <div class="container my-4">
+            <div class="card mb-3 column">
+                <img src="https://source.unsplash.com/1600x400/?joker" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card-1 on Joker</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
             </div>
             <div class="card">
-                <img class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49uiio3PlQx0FalidjK6bM0OYUolMOpa-YQ&usqp=CAU"
-                    alt="Card image cap" width="150" height="400">
-
-            </div>
-            <div class="card">
-                <img class="card-img-top"
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS49uiio3PlQx0FalidjK6bM0OYUolMOpa-YQ&usqp=CAU"
-                    alt="Card image cap" width="150" height="400">
-
+                <div class="card-body">
+                    <h5 class="card-title">Card-2 on Joker</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                </div>
+                <img src="https://source.unsplash.com/1600x400/?joker" class="card-img-bottom" alt="...">
             </div>
         </div>
-
-
 
 
 
@@ -127,10 +135,10 @@
 
 
             <div class="card mb-3 my-4">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGyWWpO5BNkJ18R9dWLMTi7aklwtBjTBKWFw&usqp=CAU"
+                <img src="https://source.unsplash.com/1600x400/?joker"
                     class="card-img-top" alt="..." width="100" height="400">
                 <div class="card-body">
-                    <h4 class="card-title">Insight 1</h4>
+                    <h4 class="card-title">Column-1 on Joker</h4>
                     <p style="border:3px; border-style:solid; border-color:#010008; padding: 3em;">In early 1939, the
                         success of Superman in Action Comics prompted editors at
                         National Comics Publications (the future DC Comics) to request more superheroes for its titles.
@@ -141,7 +149,7 @@
                         on a rope. He had two stiff wings that were sticking out, looking like bat wings. And under it
                         was a big sign ...BATMAN". The bat-wing-like cape was suggested by Bob Kane, inspired as a
                         child by Leonardo da Vinci's sketch of an ornithopter flying device.
-
+                        <br>
                         Finger suggested giving the character a cowl instead of a simple domino mask, a cape instead of
                         wings, and gloves; he also recommended removing the red sections from the original
                         costume.Finger said he devised the name Bruce Wayne for the character's secret
@@ -151,16 +159,14 @@
                         were influenced by Lee Falk's popular The Phantom, a syndicated newspaper comic-strip character
                         with which Kane was also familiar.
 
-                        Kane and Finger drew upon contemporary 1930s popular culture for inspiration regarding much of
-                        the Bat-Man's look, personality, methods, and weaponry. Details find predecessors in pulp
-                        fiction, comic strips, newspaper headlines, and autobiographical details referring to Kane
-                        himself. As an aristocratic hero with a double identity, Batman had predecessors in the
+                        Batman had predecessors in the
                         Scarlet Pimpernel (created by Baroness Emmuska Orczy, 1903) and Zorro (created by Johnston
                         McCulley, 1919). Like them, Batman performed his heroic deeds in secret, averted suspicion by
                         playing aloof in public, and marked his work with a signature symbol. Kane noted the influence
                         of the films The Mark of Zorro (1920) and The Bat Whispers (1930) in the creation of the
                         character's iconography. Finger, drawing inspiration from pulp heroes like Doc Savage, The
-                        Shadow, Dick Tracy, and Sherlock Holmes, made the character a master sleuth.</p>
+                        Shadow, Dick Tracy, and Sherlock Holmes, made the character a master sleuth.
+                    </p>
                 </div>
                 <div class="card-footer">
                     <large class="text-muted">Last updated 3 mins ago</large>
@@ -168,7 +174,7 @@
             </div>
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Insight 2</h4>
+                    <h4 class="card-title">Column-2 on Joker</h4>
                     <p style="border:3px; border-style:dashed; border-color:#010008; padding: 3em;">In a report filed by
                         the GCPD, there were three theories that were presented
                         for the Joker's origin and identity. The first was that the Joker was institutionalized as a
@@ -187,12 +193,7 @@
                         should he arrange for a truck containing soldiers to be blown up.</p>
 
                 </div>
-                <div class="card-footer">
-                    <large class="text-muted">Last updated 5 mins ago</large>
-                </div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJLsXUIzbTFFj_PIpGbQvP3weqkNOsZA8hLQ&usqp=CAU"
-                    class="card-img-bottom" alt="..." width="100" height="400">
-            </div>
+  
 
 
             <footer class="bg-dark text-center text-white">
@@ -210,7 +211,7 @@
                                     </p>
 
                                     <p class="pt-2">
-                                        <strong>Password</strong>
+                                        <strong>Comment on Joker</strong>
                                     </p>
                                 </div>
 
@@ -227,31 +228,18 @@
                                         <input type="email" id="form5Example2" class="form-control" />
                                         <label class="form-label" for="form5Example21"></label>
 
-                                        <button class="w-10 btn btn-lg btn-primary my-4" type="submit">Log In</button>
+                                        <button class="w-10 btn btn-lg btn-primary my-4" type="submit">Submit</button>
                                     </div>
                                 </div>
-
-
-
-
-
-
                             </div>
                         </form>
                     </section>
 
-
-
-
-
-
-
                 </div>
-
 
                 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                     © 2022 Copyright:
-                    <a class="text-white" href="#">CR7</a>
+                    <a class="text-white" href="#">Joker2</a>
                 </div>
             </footer>
             <style>
